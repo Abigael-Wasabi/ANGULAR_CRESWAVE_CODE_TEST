@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,14 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
+
+
+
 export class AppComponent {
-  title = 'creswave';
-navigateToSignUp: any;
+  constructor(private router: Router) {}
+
+  navigateToSignUp() {
+    // Navigate to the sign-up page
+    this.router.navigate(['/signup']);
+  }
 }

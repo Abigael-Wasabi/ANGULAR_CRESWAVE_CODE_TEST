@@ -8,33 +8,39 @@
 
   img{
     height: 600px;
-    border-radius: 50%;
+
   }
   button{
     background-color:salmon;
     border-color: transparent;
     border-radius: 10px;
   }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
 
 </style>
 
-<main class="main">
+<!-- <main class="main">
   <div class="container">
   <div class="content">
     <div>
-      <nav style="text-align:center;">
-        <img class="logo" src="assets/logo.jpg" alt="Logo">
-          <a routerLink="/tasks">Home</a>
-          <a routerLink="/about">Features</a>
-          <a routerLink="/contact">Contact</a>
-          <a routerLink="/about">Sign In</a>
-      </nav>
+
     </div>
     <hr>
     <div class="content">
       <h1 style="text-align:center">Take control of your work and personal life</h1><br>
-      <button (click)="navigateToSignUp()">GET STARTED</button><br>
-      <img style="text-align:center" src="assets/hero.jpg" alt="herosection">
+
+      <div style="text-align:center; margin-bottom:20px;">
+        <button (click)="navigateToSignUp()">GET STARTED</button><br>
+      </div>
+
+      <div class="row" style="margin-bottom:20px;">
+        <img src="assets/hero.jpg" alt="herosection">
+      </div>
+
     </div>
     <div class="row">
       <div class="col-md-6">
@@ -61,14 +67,146 @@
       </div>
     </div>
 
-  </div>
+  </div><hr>
+  <footer style="text-align:center; margin-top:70px;">
+    <p>&copy; 2024. Task Management App. All rights reserved.</p>
+  </footer>
 
 </div>
+</main> -->
+
+
+
+
+<!-- <main>
+  <div class="container">
+  <nav class="navbar" style="text-align:center;">
+    <img class="logo" src="assets/logo.jpg" alt="Logo">
+    <h5>Task Management App</h5>
+      <b><a routerLink="/home">Home</a></b>
+      <b><a routerLink="/features">Features</a></b>
+      <b><a routerLink="/contact">Contact</a></b>
+      <b><a routerLink="/signin">Sign In</a></b>
+  </nav>
+  <table style="border: 1px solid black;">
+    <tr>
+      <th style="border: 1px solid black;">Title</th>
+      <th style="border: 1px solid black;">Description</th>
+      <th style="border: 1px solid black;">Action</th>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black;">
+        <input style="background-color:#DEE0DD; border-color:transparent"
+        placeholder="add a task">
+      </td>
+      <td style="border: 1px solid black;">
+        <input style="background-color:#DEE0DD; border-color:transparent"
+        placeholder="add a description">
+      </td>
+      <td><button>ADD</button></td>
+    </tr>
+  </table>
+  <hr>
+  <table>
+    <tr>
+      <th colspan="3" style="border: 1px solid black; text-align:center;">
+        <button>View Tasks</button></th>
+        <th style="border: 1px solid black; text-align:center;">Action</th>
+        <th style="border: 1px solid black; text-align:center;">Action</th>
+    </tr>
+    <tr>
+      <td  style="border: 1px solid black;">Title</td>
+      <td  style="border: 1px solid black;">Description</td>
+      <td  style="border: 1px solid black;">Status</td>
+      <td  style="border: 1px solid black;">Edit</td>
+      <td  style="border: 1px solid black;">Delete</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black;">skate</td>
+      <td style="border: 1px solid black;">go out and roll</td>
+      <td style="border: 1px solid black;">incomplete</td>
+      <td style="border: 1px solid black;">
+        <button>Edit</button></td>
+      <td style="border: 1px solid black;">
+        <button>Delete</button></td>
+    </tr>
+  </table>
+  <footer style="text-align:center; margin-top:665px;">
+    <p>&copy; 2024. Task Management App. All rights reserved.</p>
+  </footer>
+
+  </div>
+</main> -->
+
+
+<main>
+  <div class="container">
+    <nav class="navbar" style="text-align:center;">
+      <img class="logo" src="assets/logo.jpg" alt="Logo">
+      <h5>Task Management App</h5>
+        <b><a routerLink="/home">Home</a></b>
+        <b><a routerLink="/features">Features</a></b>
+        <b><a routerLink="/contact">Contact</a></b>
+        <b><a routerLink="/signin">Sign In</a></b>
+    </nav>
+    <p style="font-size:25px; font-weight:bold;">Feel overwhelmed by your never-ending to-do list? Don't worry, we've got you covered. </p>
+    <hr>
+    <div class="row">
+      <div class="col-md-6">
+      <p style="font-weight:bold">Add Task</p>
+       You're free to add new tasks to your to-do list whenever
+       you need to. This feature allows you to expand your list
+       by inputting the title and details of the task.
+      </div>
+      <div class="col-md-6">
+      <img style="height:120px;border-radius:50%"
+       src="assets/addtask.jpg" alt="pic">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+      <img style="height:120px;border-radius:50%"
+       src="assets/addsub.jpg" alt="pic">
+      </div>
+      <div class="col-md-6">
+      <p style="font-weight:bold">Add Subtask</p>
+      Break down larger tasks into smaller, manageable subtasks. This
+      feature helps you organize your tasks more effectively and tackle
+      complex projects with step-by-step progress tracking.
+      </div>
+    </div>
+    <div class="row">
+
+      <div class="col-md-6">
+      <p style="font-weight:bold">Complete Task</p>
+      Once you've finished a task, mark it as complete.
+      This helps you keep track of what you've accomplished and what's
+      still pending on your list.
+      </div>
+      <div class="col-md-6">
+      <img style="height:120px;border-radius:50%"
+       src="assets/completetask.jpg" alt="logo">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+      <img style="height:120px;border-radius:50%"
+       src="assets/undo.webp" alt="logo">
+      </div>
+      <div class="col-md-6">
+      <p style="font-weight:bold">Undo Complete</p>
+      If you accidentally mark a task as complete or change
+      your mind, you can easily undo the completion status. This gives you
+      the flexibility to manage your tasks the way you want.
+      </div>
+    </div>
+    <hr>
+    <footer style="text-align:center; margin-top:160px;">
+      <p>&copy; 2024. Task Management App. All rights reserved.</p>
+    </footer>
+  </div>
 </main>
 
 
 
-
-
-
-<router-outlet />
+<router-outlet></router-outlet>
